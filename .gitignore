@@ -21,3 +21,8 @@ Thumbs.db
 
 # Ignorar dependências instaladas pelo pip
 *.egg-info/
+
+# Ignorar pastas DBT
+target/
+dbt_packages/
+logs/

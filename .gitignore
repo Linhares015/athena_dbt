@@ -1,1 +1,23 @@
-./venv/
+# Ignorar o ambiente virtual
+venv/
+.env/
+
+# Ignorar arquivos e diretórios criados pelo Python
+*.pyc
+__pycache__/
+
+# Ignorar arquivos de configuração do editor
+.vscode/
+.idea/
+*.swp
+
+# Ignorar arquivos de configuração do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar logs e bancos de dados locais
+*.log
+*.sqlite3
+
+# Ignorar dependências instaladas pelo pip
+*.egg-info/

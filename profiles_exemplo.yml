@@ -1,0 +1,12 @@
+athena:
+  outputs:
+    dev:
+      dbname: "{{ env_var('DBT_DBNAME') }}"
+      host: "{{ env_var('DBT_HOST') }}"
+      pass: "{{ env_var('DBT_PASS') }}"
+      port: "{{ env_var('DBT_PORT', '5432') }}"
+      schema: "{{ env_var('DBT_SCHEMA') }}"
+      threads: "{{ env_var('DBT_THREADS', '1') }}"
+      type: "{{ env_var('DBT_TYPE', 'postgres') }}"
+      user: "{{ env_var('DBT_USER') }}"
+  target: dev

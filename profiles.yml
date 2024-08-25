@@ -1,0 +1,12 @@
+athena:
+  outputs:
+    dev:
+      dbname: "postgres"
+      host: "192.168.124.109"
+      pass: "postgres015@@"
+      port: 5432
+      schema: "public"
+      threads: 1
+      type: "postgres"
+      user: "postgres"
+  target: dev

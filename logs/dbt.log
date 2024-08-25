@@ -386,3 +386,153 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m11:10:11.719780 [debug] [MainThread]: Connection 'debug' was properly closed.
 [0m11:10:11.720885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd1ce21e660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd1cd8fe5a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd1ce06f050>]}
 [0m11:10:11.722572 [debug] [MainThread]: Flushing usage events
+[0m19:29:42.995067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2bfd2a99a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2bfcd6acc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2bfc2511c0>]}
+
+
+============================== 19:29:43.003078 | 43b7acc4-007a-4244-bbc5-fb4512d8d7d5 ==============================
+[0m19:29:43.003078 [info ] [MainThread]: Running with dbt=1.8.4
+[0m19:29:43.004409 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/linhares/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m19:29:43.021150 [info ] [MainThread]: dbt version: 1.8.4
+[0m19:29:43.021823 [info ] [MainThread]: python version: 3.12.4
+[0m19:29:43.022563 [info ] [MainThread]: python path: /home/linhares/Projetos/athena_dbt/venv/bin/python3
+[0m19:29:43.023320 [info ] [MainThread]: os info: Linux-6.10.5-200.fc40.x86_64-x86_64-with-glibc2.39
+[0m19:29:43.031962 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_DBNAME'
+[0m19:29:43.035593 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.13315824, "process_user_time": 2.113079, "process_kernel_time": 0.17041, "process_mem_max_rss": "86804", "process_in_blocks": "39920", "process_out_blocks": "16", "command_success": false}
+[0m19:29:43.038086 [debug] [MainThread]: Command `dbt debug` failed at 19:29:43.037711 after 0.14 seconds
+[0m19:29:43.039086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2bfc1d7e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2bfca3a720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2bfbfc70b0>]}
+[0m19:29:43.040090 [debug] [MainThread]: Flushing usage events
+[0m19:30:07.008015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe54956a4e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe548ce2fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe54bacc6b0>]}
+
+
+============================== 19:30:07.022918 | b3966d43-d74e-4815-97c8-137ac7529d0b ==============================
+[0m19:30:07.022918 [info ] [MainThread]: Running with dbt=1.8.4
+[0m19:30:07.026901 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/linhares/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:30:07.070487 [info ] [MainThread]: dbt version: 1.8.4
+[0m19:30:07.073440 [info ] [MainThread]: python version: 3.12.4
+[0m19:30:07.076313 [info ] [MainThread]: python path: /home/linhares/Projetos/athena_dbt/venv/bin/python3
+[0m19:30:07.078914 [info ] [MainThread]: os info: Linux-6.10.5-200.fc40.x86_64-x86_64-with-glibc2.39
+[0m19:30:07.558807 [info ] [MainThread]: Using profiles dir at /home/linhares/.dbt
+[0m19:30:07.561992 [info ] [MainThread]: Using profiles.yml file at /home/linhares/.dbt/profiles.yml
+[0m19:30:07.565813 [info ] [MainThread]: Using dbt_project.yml file at /home/linhares/Projetos/athena_dbt/dbt_project.yml
+[0m19:30:07.570954 [info ] [MainThread]: adapter type: postgres
+[0m19:30:07.574419 [info ] [MainThread]: adapter version: 1.8.2
+[0m19:30:07.577327 [info ] [MainThread]: Configuration:
+[0m19:30:07.580071 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:30:07.582722 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:30:07.585863 [info ] [MainThread]: Required dependencies:
+[0m19:30:07.590858 [debug] [MainThread]: Executing "git --help"
+[0m19:30:07.601601 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:30:07.605688 [debug] [MainThread]: STDERR: "b''"
+[0m19:30:07.608157 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:30:07.611974 [info ] [MainThread]: Connection:
+[0m19:30:07.616052 [info ] [MainThread]:   host: 192.168.124.109
+[0m19:30:07.619207 [info ] [MainThread]:   port: 5432
+[0m19:30:07.622661 [info ] [MainThread]:   user: postgres
+[0m19:30:07.624831 [info ] [MainThread]:   database: postgres
+[0m19:30:07.627849 [info ] [MainThread]:   schema: public
+[0m19:30:07.630501 [info ] [MainThread]:   connect_timeout: 10
+[0m19:30:07.633756 [info ] [MainThread]:   role: None
+[0m19:30:07.637981 [info ] [MainThread]:   search_path: None
+[0m19:30:07.641370 [info ] [MainThread]:   keepalives_idle: 0
+[0m19:30:07.644676 [info ] [MainThread]:   sslmode: None
+[0m19:30:07.647456 [info ] [MainThread]:   sslcert: None
+[0m19:30:07.650287 [info ] [MainThread]:   sslkey: None
+[0m19:30:07.653284 [info ] [MainThread]:   sslrootcert: None
+[0m19:30:07.656575 [info ] [MainThread]:   application_name: dbt
+[0m19:30:07.659391 [info ] [MainThread]:   retries: 1
+[0m19:30:07.663181 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m19:30:07.680172 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m19:30:07.914954 [debug] [MainThread]: Using postgres connection "debug"
+[0m19:30:07.917885 [debug] [MainThread]: On debug: select 1 as id
+[0m19:30:07.920827 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:30:07.995756 [debug] [MainThread]: SQL status: SELECT 1 in 0.075 seconds
+[0m19:30:08.001191 [debug] [MainThread]: On debug: Close
+[0m19:30:08.003853 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:30:08.006723 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:30:08.010219 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/linhares/Projetos/athena_dbt/dbt_project.yml> not found
+
+[0m19:30:08.017349 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.272391, "process_user_time": 6.151246, "process_kernel_time": 0.351395, "process_mem_max_rss": "98752", "process_in_blocks": "14952", "process_out_blocks": "8", "command_success": false}
+[0m19:30:08.022042 [debug] [MainThread]: Command `dbt debug` failed at 19:30:08.021145 after 1.28 seconds
+[0m19:30:08.025261 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:30:08.028494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe548eefc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe548a4bc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe54bacc6b0>]}
+[0m19:30:08.032680 [debug] [MainThread]: Flushing usage events
+[0m19:31:26.392491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c3cbc8770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c3cb4a4e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c3cfc5880>]}
+
+
+============================== 19:31:26.395059 | 6eb99607-abdb-40d5-b275-2bf42a1ecb2d ==============================
+[0m19:31:26.395059 [info ] [MainThread]: Running with dbt=1.8.4
+[0m19:31:26.395849 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/linhares/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:31:26.405341 [info ] [MainThread]: dbt version: 1.8.4
+[0m19:31:26.405823 [info ] [MainThread]: python version: 3.12.4
+[0m19:31:26.406239 [info ] [MainThread]: python path: /home/linhares/Projetos/athena_dbt/venv/bin/python3
+[0m19:31:26.406683 [info ] [MainThread]: os info: Linux-6.10.5-200.fc40.x86_64-x86_64-with-glibc2.39
+[0m19:31:26.410210 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_DBNAME'
+[0m19:31:26.411124 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.071007974, "process_user_time": 1.28372, "process_kernel_time": 0.085925, "process_mem_max_rss": "87096", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m19:31:26.411680 [debug] [MainThread]: Command `dbt debug` failed at 19:31:26.411571 after 0.07 seconds
+[0m19:31:26.412265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c3db16510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c3ceba4b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c3c8da9c0>]}
+[0m19:31:26.413007 [debug] [MainThread]: Flushing usage events
+[0m19:31:40.452321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f09284eed20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0926b80b60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0926d61e80>]}
+
+
+============================== 19:31:40.456608 | a9907014-73ee-44ce-a7a3-9ae1f4e4131a ==============================
+[0m19:31:40.456608 [info ] [MainThread]: Running with dbt=1.8.4
+[0m19:31:40.457520 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/linhares/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:31:40.470340 [info ] [MainThread]: dbt version: 1.8.4
+[0m19:31:40.471163 [info ] [MainThread]: python version: 3.12.4
+[0m19:31:40.471752 [info ] [MainThread]: python path: /home/linhares/Projetos/athena_dbt/venv/bin/python3
+[0m19:31:40.472439 [info ] [MainThread]: os info: Linux-6.10.5-200.fc40.x86_64-x86_64-with-glibc2.39
+[0m19:31:40.610082 [info ] [MainThread]: Using profiles dir at /home/linhares/.dbt
+[0m19:31:40.611216 [info ] [MainThread]: Using profiles.yml file at /home/linhares/.dbt/profiles.yml
+[0m19:31:40.612192 [info ] [MainThread]: Using dbt_project.yml file at /home/linhares/Projetos/athena_dbt/dbt_project.yml
+[0m19:31:40.613426 [info ] [MainThread]: adapter type: postgres
+[0m19:31:40.614477 [info ] [MainThread]: adapter version: 1.8.2
+[0m19:31:40.615240 [info ] [MainThread]: Configuration:
+[0m19:31:40.615907 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:31:40.617017 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:31:40.617642 [info ] [MainThread]: Required dependencies:
+[0m19:31:40.618191 [debug] [MainThread]: Executing "git --help"
+[0m19:31:40.620344 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:31:40.621017 [debug] [MainThread]: STDERR: "b''"
+[0m19:31:40.621540 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:31:40.622118 [info ] [MainThread]: Connection:
+[0m19:31:40.622751 [info ] [MainThread]:   host: 192.168.124.109
+[0m19:31:40.623275 [info ] [MainThread]:   port: 5432
+[0m19:31:40.623804 [info ] [MainThread]:   user: postgres
+[0m19:31:40.624320 [info ] [MainThread]:   database: postgres
+[0m19:31:40.624949 [info ] [MainThread]:   schema: public
+[0m19:31:40.625588 [info ] [MainThread]:   connect_timeout: 10
+[0m19:31:40.626472 [info ] [MainThread]:   role: None
+[0m19:31:40.627343 [info ] [MainThread]:   search_path: None
+[0m19:31:40.628057 [info ] [MainThread]:   keepalives_idle: 0
+[0m19:31:40.629032 [info ] [MainThread]:   sslmode: None
+[0m19:31:40.629958 [info ] [MainThread]:   sslcert: None
+[0m19:31:40.630909 [info ] [MainThread]:   sslkey: None
+[0m19:31:40.631823 [info ] [MainThread]:   sslrootcert: None
+[0m19:31:40.632827 [info ] [MainThread]:   application_name: dbt
+[0m19:31:40.634128 [info ] [MainThread]:   retries: 1
+[0m19:31:40.635080 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m19:31:40.637090 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m19:31:40.673953 [debug] [MainThread]: Using postgres connection "debug"
+[0m19:31:40.674604 [debug] [MainThread]: On debug: select 1 as id
+[0m19:31:40.675510 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:31:40.693958 [debug] [MainThread]: SQL status: SELECT 1 in 0.018 seconds
+[0m19:31:40.696137 [debug] [MainThread]: On debug: Close
+[0m19:31:40.696938 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:31:40.698141 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:31:40.698925 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/linhares/Projetos/athena_dbt/dbt_project.yml> not found
+
+[0m19:31:40.700403 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.33849415, "process_user_time": 1.786959, "process_kernel_time": 0.094036, "process_mem_max_rss": "99100", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m19:31:40.701602 [debug] [MainThread]: Command `dbt debug` failed at 19:31:40.701414 after 0.34 seconds
+[0m19:31:40.702216 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:31:40.702836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0926dc38c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0926fb15b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f092688ac60>]}
+[0m19:31:40.703465 [debug] [MainThread]: Flushing usage events

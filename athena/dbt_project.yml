@@ -18,9 +18,12 @@ models:
   athena:
     staging:
       +materialized: table
+      +schema: staging
 
     intermediate:
       +materialized: ephemeral
+      +schema: intermediate
 
     marts:
       +materialized: table
+      +schema: marts

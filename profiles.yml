@@ -2,9 +2,9 @@ athena:
   outputs:
     dev:
       dbname: "postgres"
-      host: "192.168.124.109"
+      host: "192.168.124.160"
       pass: "postgres015@@"
-      port: 5432
+      port: 5433
       schema: "public"
       threads: 1
       type: "postgres"

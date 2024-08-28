@@ -3,10 +3,10 @@ athena:
   outputs:
     dev:
       type: postgres
-      host: 192.168.124.160
-      user: postgres
-      password: postgres015@@
-      port: 5433
-      dbname: postgres
-      schema: public
+      host: "{{ env_var('DBT_HOST') }}"
+      user: "{{ env_var('DBT_USER') }}"
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      port: "{{ env_var('DBT_PORT', default='5432') }}"  # Pode definir um valor padrão caso a variável não seja definida
+      dbname: "{{ env_var('DBT_DBNAME', default='postgres') }}"
+      schema: "{{ env_var('DBT_SCHEMA', default='public') }}"
       threads: 4

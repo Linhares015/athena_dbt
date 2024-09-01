@@ -1,0 +1,41 @@
+version: 2
+
+sources:
+  - name: covid_19
+    database: postgres
+    schema: raw_covid
+
+    tables:
+      - name: caso
+        description: "A tabela reflete casos de COVID_19 registrados em um determinado período e local."
+
+        columns:
+          - name: date
+            description: "Data de registro do caso."
+            tests:
+              - not_null
+          - name: state
+            description: "Estado onde o caso foi registrado."
+          - name: deaths
+            description: "Número de mortes registradas."
+          - name: is_last
+            description: "Indica se o registro é o mais recente."
+          - name: confirmed
+            description: "Número de casos confirmados."
+          - name: death_rate
+            description: "Taxa de mortalidade."
+          - name: place_type
+            description: "Tipo de local onde o caso foi registrado."
+          - name: city_ibge_code
+            description: "Código do IBGE da cidade onde o caso foi registrado."
+          - name: order_for_place
+            description: "Ordem de registro do caso."
+          - name: estimated_population
+            description: "População estimada."
+          - name: estimated_population_2019
+            description: "População estimada em 2019."
+          - name: confirmed_per_100k_inhabitants
+            description: "Número de casos confirmados por 100 mil habitantes."
+          - name: _airbyte_extracted_at
+            description: "Data de extração do registro."
+          

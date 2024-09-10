@@ -1,3 +1,7 @@
+{{ config(
+    tags=["staging", "covid_19"]
+) }}
+
 with fonte as (
     select 
         cast("date" as date) as data_leitura

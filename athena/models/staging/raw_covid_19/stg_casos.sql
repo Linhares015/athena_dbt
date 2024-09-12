@@ -1,5 +1,6 @@
 {{ config(
-    tags=["staging", "covid_19"]
+    schema='staging',
+    tags=["staging", "covid_19"],
 ) }}
 
 with fonte as (
